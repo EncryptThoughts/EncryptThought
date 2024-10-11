@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Private Message</title>
+    <script type="text/javascript">
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            if (password === "mybf21") {
+                window.location.href = "messages.html";  // Link to your messages page
+            } else {
+                alert("Incorrect password. Try again.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Enter Password to View Messages</h1>
+    <input type="password" id="password" />
+    <button onclick="checkPassword()">Submit</button>
+</body>
+</html>
